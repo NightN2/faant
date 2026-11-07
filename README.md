@@ -13,7 +13,7 @@ The open source code for Fight An Ant's systems.
 - All files are stored in src/ for rojo to read.
 - Inside src/, files are divided into three folders, based on the file type: modules, local and server scripts.
 - Module scripts only have a .luau file extension.
-- Local scripts have a .local.luau file extension.
+- Local scripts have a .client.luau file extension.
 - Server scripts have a .server.luau file extension.
 
 ## Credits
