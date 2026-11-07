@@ -7,7 +7,7 @@ PhysicsService:RegisterCollisionGroup("PlayerSensor")
 
 PhysicsService:CollisionGroupSetCollidable("Players", "Ants", false)
 
-PhysicsService:CollisionGroupSetCollidable("PlayerSensor", "Ants", false)
+PhysicsService:CollisionGroupSetCollidable("PlayerSensor", "Ants", true)
 PhysicsService:CollisionGroupSetCollidable("PlayerSensor", "Players", false)
 PhysicsService:CollisionGroupSetCollidable("PlayerSensor", "Default", false)
 PhysicsService:CollisionGroupSetCollidable("PlayerSensor", "PlayerSensor", false)
