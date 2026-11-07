@@ -10,7 +10,7 @@ function HouseHealth.SetHealth(
     local healthBar = player.PlayerGui.INGAME.TopHUD.HealthOn
 
     health = value
-    healthLabel.Text = health
+    healthLabel.Text = health .. "/10"
     healthBar.Size = UDim2.new(health * 0.03, 0, 0.29, 0)
 end
 
@@ -26,7 +26,7 @@ function HouseHealth.Modifyhealth(
     local healthBar = player.PlayerGui.INGAME.TopHUD.HealthOn
 
     health += increase
-    healthLabel.Text = health
+    healthLabel.Text = health .. "/10"
     healthBar.Size = UDim2.new(health * 0.03, 0, 0.29, 0)
 
 end
