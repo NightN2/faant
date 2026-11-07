@@ -1,0 +1,15 @@
+local Ants = require(script.Parent.Parent.modules.ants)
+local HouseHealth = require(script.Parent.Parent.modules.house_health)
+
+local destination = Vector3.new(-60.5, 3, 10)
+
+Ants.Pathfind(Ants.SpawnAnt(), destination)
+
+local players: Players = game:GetService("Players"):GetPlayers()
+
+for _, player in pairs(players) do
+    HouseHealth.Modifyhealth(
+        player,
+        -1
+    )
+end
