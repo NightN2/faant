@@ -22,7 +22,6 @@ function Ants.Pathfind(
 		AgentCanJump = false,
 		AgentCanClimb = false,
 		WaypointSpacing = 0.1
-		
 	})
 
 	path:ComputeAsync(
