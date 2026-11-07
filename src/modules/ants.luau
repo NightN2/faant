@@ -36,11 +36,12 @@ function Ants.Pathfind(
 		ant:MoveTo(waypoint.Position)
 		ant:PivotTo(
 			CFrame.new(ant.PrimaryPart.Position,
-			Vector3.new(-60.5, 3, 10))
+			Vector3.new(-60.5, 4, 10))
 		)
 		task.wait()
 	end
 
+	ant:Destroy()
 end
 
 return Ants
