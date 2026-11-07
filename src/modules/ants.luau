@@ -5,7 +5,7 @@ local Ants = {}
 
 function Ants.SpawnAnt(): Model
 	local antSpawn = antModel:Clone()
-	antSpawn.Parent = game.Workspace
+	antSpawn.Parent = game.Workspace.Game
 
 	local newPosition = Vector3.new(-160, 3, math.random(-16, 16))
 	antSpawn:MoveTo(newPosition)
