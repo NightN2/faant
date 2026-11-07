@@ -35,8 +35,10 @@ function Ants.Pathfind(
 	for _, waypoint in waypoints do
 		ant:MoveTo(waypoint.Position)
 		ant:PivotTo(
-			CFrame.new(ant.PrimaryPart.Position,
-			Vector3.new(-60.5, 4, 10))
+			CFrame.new(
+				ant.PrimaryPart.Position,
+				destination
+			)
 		)
 		task.wait()
 	end
