@@ -7,10 +7,11 @@ PhysicsService:RegisterCollisionGroup("PlayerSensor")
 
 PhysicsService:CollisionGroupSetCollidable("Players", "Ants", false)
 
-PhysicsService:CollisionGroupSetCollidable("PlayerSensor", "Ants", true)
+PhysicsService:CollisionGroupSetCollidable("PlayerSensor", "Ants", false)
 PhysicsService:CollisionGroupSetCollidable("PlayerSensor", "Players", false)
 PhysicsService:CollisionGroupSetCollidable("PlayerSensor", "Default", false)
 PhysicsService:CollisionGroupSetCollidable("PlayerSensor", "PlayerSensor", false)
+PhysicsService:CollisionGroupSetCollidable("Ants", "Ants", false)
 
 local function OnCharacterAdded(character: Model)
 	for _, part in character:GetDescendants() do
